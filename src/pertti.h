@@ -1,7 +1,7 @@
+#include <raylib.h>
+
 #ifndef PERTTI_H
 #define PERTTI_H
-
-#include <raylib.h>
 
 typedef struct {
   Vector2 position;
@@ -9,9 +9,9 @@ typedef struct {
   float size;
 } Pertti;
 
-Pertti pertti;
-
 void drawPertti(Pertti *new_pertti);
+
+// wtf is this doing??
 Pertti * createPertti(Vector2 position, Color color, float size);
 
 #endif

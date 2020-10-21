@@ -1,13 +1,18 @@
-#include "pertti.h"
+#include <stdlib.h>
 #include <raylib.h>
 
-void drawPertti(Pertti *new_pertti)
+#include "pertti.h"
+
+void drawPertti (Pertti *pertti)
 {
-  DrawCircle(new_pertti->position.x, new_pertti->position.y, new_pertti->size, new_pertti->color);
+  DrawCircle(pertti->position.x, pertti->position.y, pertti->size, pertti->color);
 }
 
-Pertti * createPertti(Vector2 position, Color color, float size)
+Pertti* createPertti (Vector2 position, Color color, float size)
 {
-  pertti = (Pertti) {position, color, size};
-  return &pertti;
+  Pertti *pertti;
+  pertti = malloc(sizeof(Pertti));
+
+  *pertti = (Pertti) {position, color, size};
+  return pertti;
 }
