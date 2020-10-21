@@ -9,6 +9,8 @@ typedef struct {
   float size;
 } Pertti;
 
+Pertti dummyPerttiForSizeCheckPlsDontUseMeDumFML;
+
 void drawPertti(Pertti *new_pertti);
 Pertti * createPertti(Vector2 position, Color color, float size);
 

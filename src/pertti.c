@@ -10,7 +10,7 @@ void drawPertti(Pertti *new_pertti)
 Pertti* createPertti(Vector2 position, Color color, float size)
 {
   Pertti *pertti;
-  pertti = malloc(100); // idk how big pls halp me dum
+  pertti = malloc(sizeof(dummyPerttiForSizeCheckPlsDontUseMeDumFML)); // idk how big pls halp me dum
 
   *pertti = (Pertti) {position, color, size};
   return pertti;
