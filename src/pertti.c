@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <raylib.h>
+
 #include "pertti.h"
 
 void drawPertti (Pertti *pertti)
