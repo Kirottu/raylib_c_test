@@ -9,8 +9,6 @@ typedef struct {
   float size;
 } Pertti;
 
-Pertti pertti;
-
 void drawPertti(Pertti *new_pertti);
 Pertti * createPertti(Vector2 position, Color color, float size);
 
