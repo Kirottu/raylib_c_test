@@ -11,7 +11,6 @@ typedef struct {
 
 void drawPertti(Pertti *new_pertti);
 
-// wtf is this doing??
 Pertti * createPertti(Vector2 position, Color color, float size);
 
 #endif
